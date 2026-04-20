@@ -36,7 +36,7 @@
   <header class="nav">
     <div class="nav__inner container">
       <a href="#top" class="nav__brand">
-        <span class="nav__brand-mark">SN</span>
+        <img class="nav__brand-photo" src="saad_photo.jpeg" alt="Saad Naseem" width="40" height="40" />
         <span class="nav__brand-text">Saad Naseem</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
@@ -44,7 +44,9 @@
         <a href="#expertise"><span class="nav__num">02</span> Expertise</a>
         <a href="#experience"><span class="nav__num">03</span> Experience</a>
         <a href="#publications"><span class="nav__num">04</span> Publications</a>
-        <a href="#contact"><span class="nav__num">05</span> Contact</a>
+        <a href="#hobbies"><span class="nav__num">05</span> Hobbies</a>
+        <a href="#reading"><span class="nav__num">06</span> Reading</a>
+        <a href="#contact"><span class="nav__num">07</span> Contact</a>
       </nav>
       <button id="themeToggle" class="nav__theme" aria-label="Toggle color theme">
         <i class="fa-solid fa-moon"></i>
@@ -92,7 +94,7 @@
 
       <aside class="hero__card" aria-label="At a glance">
         <div class="hero__avatar">
-          <span class="hero__avatar-mark">SN</span>
+          <img class="hero__avatar-photo" src="saad_photo.jpeg" alt="Saad Naseem" />
           <div class="hero__avatar-ring" aria-hidden="true"></div>
         </div>
         <div class="hero__chips">
@@ -333,10 +335,120 @@
       </ul>
     </section>
 
+    <!-- HOBBIES -->
+    <section id="hobbies" class="section container">
+      <header class="section__head">
+        <span class="section__num">06</span>
+        <h2 class="section__title">Beyond the lab<em>.</em></h2>
+        <span class="section__rule"></span>
+      </header>
+      <div class="hobbies">
+        <p class="hobbies__lede">
+          I read a lot — mostly <em>Asian literature</em>. Over the years I've enjoyed exploring
+          a range of hobbies, from bouldering, softball, and football to, more recently,
+          crocheting.
+        </p>
+        <div class="hobbies__grid">
+          <div class="hobby">
+            <i class="fa-solid fa-book-open"></i>
+            <h3>Reading</h3>
+            <p>Especially Asian literature — Hosseini, Murakami, Pamuk.</p>
+          </div>
+          <div class="hobby">
+            <i class="fa-solid fa-mountain"></i>
+            <h3>Bouldering</h3>
+            <p>Problem-solving with your body — hard to beat.</p>
+          </div>
+          <div class="hobby">
+            <i class="fa-solid fa-baseball"></i>
+            <h3>Softball</h3>
+            <p>Weekend league, Bay Area.</p>
+          </div>
+          <div class="hobby">
+            <i class="fa-solid fa-futbol"></i>
+            <h3>Football</h3>
+            <p>The round-ball kind. Lifelong habit.</p>
+          </div>
+          <div class="hobby">
+            <i class="fa-solid fa-mitten"></i>
+            <h3>Crocheting</h3>
+            <p>My newest obsession — meditative and satisfying.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- READING RECOMMENDATIONS -->
+    <section id="reading" class="section container">
+      <header class="section__head">
+        <span class="section__num">07</span>
+        <h2 class="section__title">Reading recommendations<em>.</em></h2>
+        <span class="section__rule"></span>
+      </header>
+      <div class="reading">
+        <div class="reading__group">
+          <h3 class="reading__group-title">
+            <span class="reading__group-dot" style="background: var(--accent)"></span>
+            Non-fiction
+          </h3>
+          <ul class="books">
+            <li class="book">
+              <div class="book__text">
+                <h4>Trillion Dollar Coach</h4>
+                <p class="book__author">Eric Schmidt, Jonathan Rosenberg, Alan Eagle</p>
+                <p class="book__note">The leadership playbook of Silicon Valley's Bill Campbell — practical, human, and surprisingly tender.</p>
+              </div>
+              <a class="book__link" href="https://www.amazon.com/Trillion-Dollar-Coach-Leadership-Playbook/dp/0062839268" target="_blank" rel="noopener">
+                View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </li>
+            <li class="book">
+              <div class="book__text">
+                <h4>Anything by Daniel Pink</h4>
+                <p class="book__author">Daniel H. Pink</p>
+                <p class="book__note"><em>Drive</em>, <em>When</em>, <em>To Sell is Human</em> — smart, behavior-science-grounded writing on motivation and work.</p>
+              </div>
+              <a class="book__link" href="https://www.danpink.com/" target="_blank" rel="noopener">
+                View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </li>
+            <li class="book">
+              <div class="book__text">
+                <h4>Grit</h4>
+                <p class="book__author">Angela Duckworth</p>
+                <p class="book__note">On why passion and perseverance matter more than raw talent — a lens I come back to often.</p>
+              </div>
+              <a class="book__link" href="https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111108" target="_blank" rel="noopener">
+                View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="reading__group">
+          <h3 class="reading__group-title">
+            <span class="reading__group-dot" style="background: var(--accent-2)"></span>
+            Fiction
+          </h3>
+          <ul class="books">
+            <li class="book">
+              <div class="book__text">
+                <h4>Anything by Khaled Hosseini</h4>
+                <p class="book__author">Khaled Hosseini</p>
+                <p class="book__note"><em>The Kite Runner</em>, <em>A Thousand Splendid Suns</em>, <em>And the Mountains Echoed</em> — deeply moving, unforgettable storytelling.</p>
+              </div>
+              <a class="book__link" href="https://www.amazon.com/stores/Khaled-Hosseini/author/B001HCX9N0" target="_blank" rel="noopener">
+                View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" class="section container contact-section">
       <header class="section__head">
-        <span class="section__num">06</span>
+        <span class="section__num">08</span>
         <h2 class="section__title">Let's connect<em>.</em></h2>
         <span class="section__rule"></span>
       </header>
