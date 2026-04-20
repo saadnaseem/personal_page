@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saad Naseem, PhD — Biochemist & ML Engineer</title>
+  <meta name="description" content="Personal profile of Saad Naseem, PhD — biochemist, metabolic engineer, and machine learning practitioner at Lawrence Berkeley National Laboratory." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Saad Naseem, PhD — Biochemist & ML Engineer" />
+  <meta property="og:description" content="Biochemist and metabolic engineer combining enzyme mechanism, strain engineering, and machine learning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SVG icon sprite for brand marks not in FA Free -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-scholar" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9zM6.82 15.5V13l5.18 2.82L17.18 13v2.5L12 18.31z"/>
+    </symbol>
+    <symbol id="i-orcid" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zM7.37 18.33H5.57V7.3h1.8v11.03zm-.9-12.54a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1zm10.73 12.54h-3.02V7.3h2.94c2.94 0 4.95 2.04 4.95 5.52 0 3.77-2.01 5.51-4.87 5.51zm.06-9.38h-1.12v7.73h1.08c1.72 0 3.06-1.1 3.06-3.86 0-2.55-1.19-3.87-3.02-3.87z"/>
+    </symbol>
+  </svg>
+
+  <!-- Ambient background art -->
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient__mesh"></div>
+    <div class="ambient__grid"></div>
+    <div class="ambient__noise"></div>
+  </div>
+
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="nav__brand">
+        <span class="nav__brand-mark">SN</span>
+        <span class="nav__brand-text">Saad Naseem</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about"><span class="nav__num">01</span> About</a>
+        <a href="#expertise"><span class="nav__num">02</span> Expertise</a>
+        <a href="#experience"><span class="nav__num">03</span> Experience</a>
+        <a href="#publications"><span class="nav__num">04</span> Publications</a>
+        <a href="#contact"><span class="nav__num">05</span> Contact</a>
+      </nav>
+      <button id="themeToggle" class="nav__theme" aria-label="Toggle color theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero__text">
+        <div class="hero__badge">
+          <span class="hero__pulse" aria-hidden="true"></span>
+          Available for collaborations · Berkeley, CA
+        </div>
+        <h1 class="hero__name">
+          <span class="hero__line">Saad Naseem<span class="hero__comma">,</span></span>
+          <span class="hero__line hero__line--serif">Ph<em>D</em></span>
+        </h1>
+        <h2 class="hero__role">
+          <span class="hero__role-arrow">→</span>
+          <span class="type-target" id="typeTarget">Biochemist</span><span class="type-caret" aria-hidden="true">_</span>
+        </h2>
+        <p class="hero__lede">
+          Postdoctoral scholar at <a href="https://www.lbl.gov/" target="_blank" rel="noopener">Lawrence Berkeley National Laboratory</a>, working at the intersection of
+          <mark>biochemistry</mark>, <mark>metabolic engineering</mark>, and <mark>machine learning</mark>.
+          Currently building high-throughput bioprocess pipelines for rare earth element biorecovery.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">
+            <i class="fa-regular fa-paper-plane"></i> Get in touch
+            <span class="btn__shine" aria-hidden="true"></span>
+          </a>
+          <a class="btn btn--ghost" href="Naseem_Saad_Resume.pdf" target="_blank" rel="noopener">
+            <i class="fa-regular fa-file-lines"></i> Resume / CV
+          </a>
+        </div>
+        <ul class="hero__socials" aria-label="Social links">
+          <li><a href="mailto:snaseem@lbl.gov" aria-label="Email" data-label="Email"><i class="fa-regular fa-envelope"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/snaseem-phd" target="_blank" rel="noopener" aria-label="LinkedIn" data-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/saadnaseem" target="_blank" rel="noopener" aria-label="GitHub" data-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://scholar.google.com/citations?user=K2FOWsgAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" data-label="Scholar"><svg class="icon-svg"><use href="#i-scholar"/></svg></a></li>
+        </ul>
+      </div>
+
+      <aside class="hero__card" aria-label="At a glance">
+        <div class="hero__avatar">
+          <span class="hero__avatar-mark">SN</span>
+          <div class="hero__avatar-ring" aria-hidden="true"></div>
+        </div>
+        <div class="hero__chips">
+          <span class="chip chip--a"><i class="fa-solid fa-dna"></i> Enzyme mechanism</span>
+          <span class="chip chip--b"><i class="fa-solid fa-flask"></i> Biocatalysis</span>
+          <span class="chip chip--c"><i class="fa-solid fa-microchip"></i> GNNs / ML</span>
+          <span class="chip chip--d"><i class="fa-solid fa-robot"></i> HTS automation</span>
+        </div>
+        <dl class="hero__stats">
+          <div><dt>Years in research</dt><dd>10<span>+</span></dd></div>
+          <div><dt>Publications</dt><dd>6</dd></div>
+          <div><dt>Enzymes characterized</dt><dd>8</dd></div>
+        </dl>
+      </aside>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <header class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title">About<em>.</em></h2>
+        <span class="section__rule"></span>
+      </header>
+      <div class="about">
+        <div class="about__body">
+          <p class="about__lede">
+            I'm a biochemist and metabolic engineer who builds bridges between the wet lab and computation.
+          </p>
+          <p>
+            At <strong>Lawrence Berkeley National Laboratory</strong>, I lead a program on rare earth
+            element biorecovery using <em>Methylobacterium extorquens</em> AM1 and drive high-throughput
+            bioprocess development on Hamilton Vantage liquid handlers. Before LBNL, I earned a
+            PhD in Chemistry from Texas A&amp;M where I characterized metalloenzymes in the lumichrome
+            catabolic pathway and studied C–S bond-forming cytochrome P450s.
+          </p>
+          <p>
+            I'm also pursuing an <strong>M.S. in Computer Science (Machine Learning)</strong> at
+            Georgia Tech — deepening my work in predictive modeling, cheminformatics, and graph
+            neural networks for substrate utilization prediction.
+          </p>
+        </div>
+        <aside class="about__facts">
+          <div class="fact"><span class="fact__k">Based in</span><span class="fact__v">Berkeley, CA</span></div>
+          <div class="fact"><span class="fact__k">Role</span><span class="fact__v">Postdoctoral Scholar · LBNL</span></div>
+          <div class="fact"><span class="fact__k">Studying</span><span class="fact__v">MS CS · Georgia Tech</span></div>
+          <div class="fact"><span class="fact__k">Work status</span><span class="fact__v">Permanent resident</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section container">
+      <header class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Expertise<em>.</em></h2>
+        <span class="section__rule"></span>
+      </header>
+      <div class="skills">
+        <article class="skill">
+          <div class="skill__icon"><i class="fa-solid fa-dna"></i></div>
+          <h3>Molecular Biology</h3>
+          <p>PCR, cloning, Gibson &amp; Golden Gate assembly, CRISPR-Cpf1, CRAGE, gene insertion / deletion in <em>P. putida</em> KT2440.</p>
+          <span class="skill__deco" aria-hidden="true"></span>
+        </article>
+        <article class="skill">
+          <div class="skill__icon"><i class="fa-solid fa-flask-vial"></i></div>
+          <h3>Protein Biochemistry</h3>
+          <p>Recombinant expression &amp; purification, enzyme kinetics, assay development, AlphaFold, PyMOL, AutoDock Vina.</p>
+          <span class="skill__deco" aria-hidden="true"></span>
+        </article>
+        <article class="skill">
+          <div class="skill__icon"><i class="fa-solid fa-atom"></i></div>
+          <h3>Crystallography</h3>
+          <p>Screening, optimization, and independent X-ray diffraction data collection.</p>
+          <span class="skill__deco" aria-hidden="true"></span>
+        </article>
+        <article class="skill">
+          <div class="skill__icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Analytical Chemistry</h3>
+          <p>HPLC, LC-MS method development, GC-MS (SRM/MRM), NMR, UV-Vis, FPLC (ÄKTA), plate readers.</p>
+          <span class="skill__deco" aria-hidden="true"></span>
+        </article>
+        <article class="skill">
+          <div class="skill__icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Computation &amp; ML</h3>
+          <p>Python, Java, supervised / unsupervised ML, AutoGluon, graph neural networks (Chemprop D-MPNN), cheminformatics, JMP.</p>
+          <span class="skill__deco" aria-hidden="true"></span>
+        </article>
+        <article class="skill">
+          <div class="skill__icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Automation &amp; HTS</h3>
+          <p>Hamilton Vantage liquid handling, 96-well plate assay development, Biolog PM phenotype microarrays.</p>
+          <span class="skill__deco" aria-hidden="true"></span>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <header class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Experience <span class="section__title-and">&amp;</span> Education<em>.</em></h2>
+        <span class="section__rule"></span>
+      </header>
+      <ol class="timeline">
+        <li class="timeline__item">
+          <div class="timeline__date">
+            <span class="timeline__date-range">2022 — Present</span>
+            <span class="timeline__date-tag">Current</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Postdoctoral Scholar, Biochemist</h3>
+            <p class="timeline__org">Lawrence Berkeley National Laboratory · Berkeley, CA</p>
+            <ul>
+              <li>Lead rare earth element biorecovery using <em>M. extorquens</em> AM1; built a 96-well Arsenazo III colorimetric assay for neodymium.</li>
+              <li>Automated media prep, inoculation, and assay execution on the Hamilton Vantage platform.</li>
+              <li>Built Python pipelines for HTS data analysis, hit classification, and visualization.</li>
+              <li>Engineered <em>P. putida</em> KT2440 via CRAGE and CRISPR-Cpf1 for expanded carbon source utilization.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__date">
+            <span class="timeline__date-range">2024 — 2027</span>
+            <span class="timeline__date-tag">In progress</span>
+          </div>
+          <div class="timeline__body">
+            <h3>M.S. in Computer Science — Machine Learning</h3>
+            <p class="timeline__org">Georgia Institute of Technology · Atlanta, GA (online, part-time)</p>
+            <ul>
+              <li>Coursework: CS 7641 Machine Learning, CS 6601 Artificial Intelligence, Health Informatics.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__date">
+            <span class="timeline__date-range">2016 — 2022</span>
+          </div>
+          <div class="timeline__body">
+            <h3>Ph.D. in Chemistry</h3>
+            <p class="timeline__org">Texas A&amp;M University · College Station, TX</p>
+            <ul>
+              <li>Characterized 8 enzymes of the lumichrome catabolic pathway; discovered the first CYP450 to oxidize the C7-methyl of lumichrome.</li>
+              <li>Solved the apo-structure of chorismate dehydratase (MqnA); first example of irreversible E1cb elimination in enzymology.</li>
+              <li>Outstanding Teaching Assistant Award (2021).</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item">
+          <div class="timeline__date">
+            <span class="timeline__date-range">2012 — 2016</span>
+          </div>
+          <div class="timeline__body">
+            <h3>B.S. in Chemistry</h3>
+            <p class="timeline__org">Lahore University of Management Sciences · Pakistan</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section container">
+      <header class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Selected Publications<em>.</em></h2>
+        <a class="section__link" href="https://scholar.google.com/citations?user=K2FOWsgAAAAJ&hl=en" target="_blank" rel="noopener">
+          Full list on Google Scholar <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </header>
+      <ul class="pubs">
+        <li class="pub">
+          <span class="pub__year">2026</span>
+          <div class="pub__body">
+            <h3>Machine Learning-Driven Prediction of Substrate Utilization in <em>Pseudomonas putida</em> KT2440</h3>
+            <p class="pub__authors"><strong>Naseem S</strong>, et al.</p>
+            <p class="pub__venue">Manuscript in preparation · Graph neural networks + Biolog PM data</p>
+          </div>
+          <span class="pub__tag">GNN</span>
+        </li>
+        <li class="pub">
+          <span class="pub__year">2026</span>
+          <div class="pub__body">
+            <h3>Unraveling TNT Bioremediation: Redundant Nitroreductases and a Putative Non-Canonical Urea Pathway in <em>Pantoea</em> sp. MT58</h3>
+            <p class="pub__authors">Wang AL†, Eng T†, Rivier A, <strong>Naseem S</strong>, Codik A, Chen Y, Srinivasan A, Mukundan H, Tringe SG, Petzold CJ, Deutschbauer AM, Mukhopadhyay A*.</p>
+            <p class="pub__venue">Manuscript in preparation</p>
+          </div>
+          <span class="pub__tag">Bioremed.</span>
+        </li>
+        <li class="pub">
+          <span class="pub__year">2025</span>
+          <div class="pub__body">
+            <h3>Vitamin B2 Catabolism: Nature's Route from Riboflavin to Acetoacetate and Pyruvate</h3>
+            <p class="pub__authors">Sinha S, Jian X, Adak S, <strong>Naseem S</strong>, Steiner JL, Fedoseyenko D, Thiagarayaselvam A, Begley TP*.</p>
+            <p class="pub__venue"><em>ACS Central Science</em>, 11, 2353–2365.</p>
+          </div>
+          <span class="pub__tag">ACS Cent. Sci.</span>
+        </li>
+        <li class="pub">
+          <span class="pub__year">2019</span>
+          <div class="pub__body">
+            <h3>Menaquinone Biosynthesis: Biochemical and Structural Studies on Chorismate Dehydratase</h3>
+            <p class="pub__authors">Mahanta N, Hicks KA, <strong>Naseem S</strong>, Fedoseyenko D, Dairi T, Ealick SE, Begley TP*.</p>
+            <p class="pub__venue"><em>Biochemistry</em>, 58(14), 1837–1840.</p>
+          </div>
+          <span class="pub__tag">Biochem.</span>
+        </li>
+        <li class="pub">
+          <span class="pub__year">2018</span>
+          <div class="pub__body">
+            <h3>Novel Enzymology in Futalosine-dependent Menaquinone Biosynthesis</h3>
+            <p class="pub__authors">Joshi S, Fedoseyenko D, Mahanta N, Manion H, <strong>Naseem S</strong>, Dairi T, Begley TP*.</p>
+            <p class="pub__venue"><em>Current Opinion in Chemical Biology</em>, 47, 134–141.</p>
+          </div>
+          <span class="pub__tag">Curr. Opin.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" class="section container">
+      <header class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title">Awards <span class="section__title-and">&amp;</span> Recognition<em>.</em></h2>
+        <span class="section__rule"></span>
+      </header>
+      <ul class="awards">
+        <li><i class="fa-solid fa-award"></i> <div><strong>Spot Award</strong> — Lawrence Berkeley National Laboratory <span>2023</span></div></li>
+        <li><i class="fa-solid fa-trophy"></i> <div><strong>Best Poster</strong> — EGSB Annual Meeting, Berkeley, CA <span>2023</span></div></li>
+        <li><i class="fa-solid fa-chalkboard-user"></i> <div><strong>Outstanding Teaching Assistant</strong> — Texas A&amp;M University <span>2021</span></div></li>
+        <li><i class="fa-solid fa-star"></i> <div>Nominee, <strong>Chemistry Life Processes Award</strong> — Texas A&amp;M <span>2021</span></div></li>
+        <li><i class="fa-solid fa-certificate"></i> <div>Deep Learning for Science Summer School — LBNL <span>2025</span></div></li>
+        <li><i class="fa-solid fa-certificate"></i> <div>AI/ML to Agent-based Science — EMSL Summer School <span>2025</span></div></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact-section">
+      <header class="section__head">
+        <span class="section__num">06</span>
+        <h2 class="section__title">Let's connect<em>.</em></h2>
+        <span class="section__rule"></span>
+      </header>
+      <div class="contact">
+        <div class="contact__intro">
+          <p class="contact__lede">
+            Happy to chat about enzyme mechanism, synthetic biology, applied ML in the life sciences,
+            or new collaborations. Email is the fastest way to reach me.
+          </p>
+          <a class="btn btn--primary btn--lg" href="mailto:snaseem@lbl.gov">
+            <i class="fa-regular fa-envelope"></i> snaseem@lbl.gov
+            <span class="btn__shine" aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="contact__grid">
+          <a class="contact__card" href="https://www.linkedin.com/in/snaseem-phd" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <span class="contact__label">LinkedIn</span>
+              <span class="contact__value">/in/snaseem-phd</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square contact__go"></i>
+          </a>
+          <a class="contact__card" href="https://github.com/saadnaseem" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="contact__label">GitHub</span>
+              <span class="contact__value">@saadnaseem</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square contact__go"></i>
+          </a>
+          <a class="contact__card" href="https://scholar.google.com/citations?user=K2FOWsgAAAAJ&hl=en" target="_blank" rel="noopener">
+            <svg class="icon-svg contact__icon-svg"><use href="#i-scholar"/></svg>
+            <div>
+              <span class="contact__label">Google Scholar</span>
+              <span class="contact__value">Saad Naseem</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square contact__go"></i>
+          </a>
+          <a class="contact__card" href="tel:+18327730042">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact__label">Phone</span>
+              <span class="contact__value">+1 (832) 773-0042</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square contact__go"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Saad Naseem · <span class="footer__dim">Built with care in Berkeley, CA</span></p>
+      <a href="#top" class="footer__up" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
