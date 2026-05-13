@@ -833,6 +833,67 @@ em { font-style: italic; }
 }
 
 /* =================================================================
+   GITHUB (live contribution heatmap + stats cards)
+   ================================================================= */
+.gh { display: flex; flex-direction: column; gap: 28px; align-items: flex-start; }
+.gh__lede {
+  font-size: 1.05rem; color: var(--text-dim); max-width: 70ch;
+  margin: 0;
+}
+.gh__lede a { color: var(--text); border-bottom: 1px dotted var(--accent); }
+.gh__lede a:hover { color: var(--accent); }
+
+.gh__chart {
+  margin: 0; width: 100%;
+  padding: 26px 28px 20px;
+  background: color-mix(in oklab, var(--bg-card) 80%, transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: border-color .2s var(--ease), transform .2s var(--ease);
+}
+.gh__chart:hover { border-color: var(--border-hi); transform: translateY(-2px); }
+.gh__chart img {
+  display: block; width: 100%; height: auto;
+  /* Make the SVG's white-ish empty cells legible on dark bg */
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.2));
+}
+[data-theme="dark"] .gh__chart img {
+  /* The SVG ships with light cells for empty days. On dark theme,
+     invert lightness slightly via blend mode for better contrast. */
+  mix-blend-mode: normal;
+}
+.gh__chart-fallback {
+  display: none;
+  font-size: .92rem; color: var(--text-dim);
+  margin-top: 14px;
+}
+.gh__chart-fallback a { color: var(--accent); font-weight: 600; }
+.gh__chart--fallback img { display: none; }
+.gh__chart--fallback .gh__chart-fallback { display: block; }
+
+.gh__cards {
+  display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px;
+  width: 100%;
+}
+.gh__card {
+  width: 100%; height: auto; display: block;
+  background: color-mix(in oklab, var(--bg-card) 80%, transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color .2s var(--ease), transform .2s var(--ease);
+}
+.gh__card:hover { border-color: var(--border-hi); transform: translateY(-2px); }
+
+@media (max-width: 780px) {
+  .gh__cards { grid-template-columns: 1fr; }
+}
+
+/* =================================================================
    CONTACT
    ================================================================= */
 .contact-section { padding-bottom: 120px; }

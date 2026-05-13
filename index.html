@@ -13,7 +13,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+
+  <!-- =========================================================
+       Google Analytics 4
+       ---------------------------------------------------------
+       SETUP (one-time, ~3 min):
+         1. Go to https://analytics.google.com → Admin → Create property
+         2. Pick "Web", enter the live site URL
+         3. Copy the Measurement ID (looks like G-XXXXXXXXXX)
+         4. Replace BOTH occurrences of G-XXXXXXXXXX below
+         5. Commit + push. Data shows up in Realtime within a minute.
+       ========================================================= -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+  </script>
 </head>
 <body>
   <!-- SVG icon sprite for brand marks not in FA Free -->
@@ -46,7 +64,8 @@
         <a href="#publications"><span class="nav__num">04</span> Publications</a>
         <a href="#hobbies"><span class="nav__num">05</span> Hobbies</a>
         <a href="#reading"><span class="nav__num">06</span> Reading</a>
-        <a href="#contact"><span class="nav__num">07</span> Contact</a>
+        <a href="#github"><span class="nav__num">07</span> GitHub</a>
+        <a href="#contact"><span class="nav__num">08</span> Contact</a>
       </nav>
       <button id="themeToggle" class="nav__theme" aria-label="Toggle color theme">
         <i class="fa-solid fa-moon"></i>
@@ -445,10 +464,61 @@
       </div>
     </section>
 
+    <!-- GITHUB (live contribution graph) -->
+    <section id="github" class="section container">
+      <header class="section__head">
+        <span class="section__num">08</span>
+        <h2 class="section__title">On GitHub<em>.</em></h2>
+        <a class="section__link" href="https://github.com/saadnaseem" target="_blank" rel="noopener">
+          @saadnaseem <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </header>
+
+      <div class="gh">
+        <p class="gh__lede">
+          Live contribution heatmap, pulled in real time from <a href="https://github.com/saadnaseem" target="_blank" rel="noopener">github.com/saadnaseem</a> — updates whenever I push.
+        </p>
+
+        <figure class="gh__chart">
+          <img
+            src="https://ghchart.rshah.org/216e39/saadnaseem"
+            alt="Saad Naseem's GitHub contribution graph — last 12 months"
+            loading="lazy"
+            onerror="this.closest('figure').classList.add('gh__chart--fallback');"
+          />
+          <figcaption class="gh__chart-fallback">
+            Couldn't load the live graph just now —
+            <a href="https://github.com/saadnaseem" target="_blank" rel="noopener">view it on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </figcaption>
+        </figure>
+
+        <div class="gh__cards">
+          <img
+            class="gh__card"
+            src="https://github-readme-stats.vercel.app/api?username=saadnaseem&show_icons=true&hide_border=true&bg_color=00000000&title_color=f08a6c&icon_color=7c7aff&text_color=b7afa2&include_all_commits=true&cache_seconds=1800"
+            alt="GitHub stats summary"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+          <img
+            class="gh__card"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=saadnaseem&layout=compact&hide_border=true&bg_color=00000000&title_color=f08a6c&text_color=b7afa2&langs_count=8&cache_seconds=1800"
+            alt="Top languages on GitHub"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+        </div>
+
+        <a class="btn btn--ghost" href="https://github.com/saadnaseem" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> Visit my GitHub profile
+        </a>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" class="section container contact-section">
       <header class="section__head">
-        <span class="section__num">08</span>
+        <span class="section__num">09</span>
         <h2 class="section__title">Let's connect<em>.</em></h2>
         <span class="section__rule"></span>
       </header>
