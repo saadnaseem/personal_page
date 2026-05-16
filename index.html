@@ -12,8 +12,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.5.1/css/all.min.css"
+    integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="styles.css" />
 
   <!-- =========================================================
        Google Analytics 4
@@ -21,16 +27,25 @@
        SETUP (one-time, ~3 min):
          1. Go to https://analytics.google.com → Admin → Create property
          2. Pick "Web", enter the live site URL
-         3. Copy the Measurement ID (looks like G-XXXXXXXXXX)
-         4. Replace BOTH occurrences of G-XXXXXXXXXX below
+         3. Copy the Measurement ID (looks like G-ABC1234XYZ)
+         4. Replace the GA_ID value below with the real ID
          5. Commit + push. Data shows up in Realtime within a minute.
+       Until a real ID is set, the snippet is a no-op (no network call).
        ========================================================= -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+    (function () {
+      var GA_ID = 'G-XXXXXXXXXX';
+      if (!GA_ID || GA_ID.indexOf('XXXX') !== -1) return;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID);
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', GA_ID, { anonymize_ip: true });
+    })();
   </script>
 </head>
 <body>
@@ -54,7 +69,7 @@
   <header class="nav">
     <div class="nav__inner container">
       <a href="#top" class="nav__brand">
-        <img class="nav__brand-photo" src="saad_photo.jpeg" alt="Saad Naseem" width="40" height="40" />
+        <img class="nav__brand-photo" src="saad_photo.jpeg" alt="" width="40" height="40" decoding="async" />
         <span class="nav__brand-text">Saad Naseem</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
@@ -62,13 +77,14 @@
         <a href="#expertise"><span class="nav__num">02</span> Expertise</a>
         <a href="#experience"><span class="nav__num">03</span> Experience</a>
         <a href="#publications"><span class="nav__num">04</span> Publications</a>
-        <a href="#hobbies"><span class="nav__num">05</span> Hobbies</a>
-        <a href="#reading"><span class="nav__num">06</span> Reading</a>
-        <a href="#github"><span class="nav__num">07</span> GitHub</a>
-        <a href="#contact"><span class="nav__num">08</span> Contact</a>
+        <a href="#awards"><span class="nav__num">05</span> Awards</a>
+        <a href="#hobbies"><span class="nav__num">06</span> Hobbies</a>
+        <a href="#reading"><span class="nav__num">07</span> Reading</a>
+        <a href="#github"><span class="nav__num">08</span> GitHub</a>
+        <a href="#contact"><span class="nav__num">09</span> Contact</a>
       </nav>
-      <button id="themeToggle" class="nav__theme" aria-label="Toggle color theme">
-        <i class="fa-solid fa-moon"></i>
+      <button id="themeToggle" class="nav__theme" aria-label="Toggle color theme" aria-pressed="false">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
       </button>
     </div>
   </header>
@@ -86,8 +102,9 @@
           <span class="hero__line hero__line--serif">Ph<em>D</em></span>
         </h1>
         <h2 class="hero__role">
-          <span class="hero__role-arrow">→</span>
-          <span class="type-target" id="typeTarget">Biochemist</span><span class="type-caret" aria-hidden="true">_</span>
+          <span class="hero__role-arrow" aria-hidden="true">→</span>
+          <span class="sr-only">Biochemist, metabolic engineer, ML practitioner.</span>
+          <span class="type-target" id="typeTarget" aria-hidden="true">Biochemist</span><span class="type-caret" aria-hidden="true">_</span>
         </h2>
         <p class="hero__lede">
           Postdoctoral scholar at <a href="https://www.lbl.gov/" target="_blank" rel="noopener">Lawrence Berkeley National Laboratory</a>, working at the intersection of
@@ -113,7 +130,7 @@
 
       <aside class="hero__card" aria-label="At a glance">
         <div class="hero__avatar">
-          <img class="hero__avatar-photo" src="saad_photo.jpeg" alt="Saad Naseem" />
+          <img class="hero__avatar-photo" src="saad_photo.jpeg" alt="Portrait of Saad Naseem" width="360" height="480" decoding="async" loading="eager" />
           <div class="hero__avatar-ring" aria-hidden="true"></div>
         </div>
         <div class="hero__chips">
@@ -578,6 +595,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
